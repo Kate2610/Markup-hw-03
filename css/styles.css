@@ -5,6 +5,7 @@
     --primary-bg-color--: #FFFFFF;
     --hero-bg-color--:#2F303A;
     --team-bg-color--:#F5F4FA;
+    --btn-hover--:#188CE8;
     --border-color--:#ECECEC;
 }
 
@@ -22,6 +23,7 @@ body {
 
 
 .logo {
+    
     color:var(--title-text-color--);
     font-family: Raleway, sans-serif;
     font-size: 26px;
@@ -54,6 +56,13 @@ h1, h2, h3 {
 /*buttons*/
 
 .button:hover,
+.button:focus { 
+    background-color: var(--btn-hover--);
+    color: var(--primary-bg-color--);
+
+}
+
+
 .button {
     color: var(--primary-bg-color--);
     background-color: var(--accent-color--);
@@ -101,9 +110,17 @@ h1, h2, h3 {
 /*page-header*/
 
 .page-header {
+   
+    margin-bottom: 94px;
+    padding: 0;
     color: var(--title-text-color--);
     border-bottom:  1px  solid var(--border-color--);
 
+}
+
+.page-header-index {
+    padding: 0;
+    margin: 0;
 }
 .Web {
     color: var(--accent-color--);
@@ -118,6 +135,8 @@ h1, h2, h3 {
 
 
 .site-nav > .item {
+    margin: 0;
+    padding: 0;
     color: #212121;
     display: block;
     padding: 32px 0 32px 0;
@@ -152,6 +171,8 @@ h1, h2, h3 {
 
 
 .hero {
+    margin: 0;
+     padding: 0;
     background: var(--hero-bg-color--);
   
     margin-top: 0px;
@@ -178,6 +199,8 @@ h1, h2, h3 {
 }
 
 .advantages {
+    margin: 0;
+    padding: 0;
     display: flex;
     gap: 30px;
     list-style: none;
@@ -187,6 +210,7 @@ h1, h2, h3 {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    padding: 0;
     margin-bottom: 50px;
    
 }
@@ -195,8 +219,9 @@ h1, h2, h3 {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    margin-bottom: 50px;
     margin-top: 0;
+
+  
 
 
  
@@ -204,6 +229,7 @@ h1, h2, h3 {
 
 .team {
     background: var(--team-bg-color--);
+    padding: 0 15px;
     
   
 }
@@ -220,6 +246,9 @@ h1, h2, h3 {
 }
 
 .man {
+
+    background-color: var(--primary-bg-color--);
+    margin: 0;
     list-style: none;
     margin-right: 30px;
     text-align: center;
@@ -232,6 +261,8 @@ h1, h2, h3 {
 }
 
 .feature-list-title {
+    margin: 0;
+    padding: 0;
  
     line-height: 1.14;
     color: var(--title-text-color--);
@@ -246,13 +277,16 @@ h1, h2, h3 {
 }
 
 .text {
- 
+    margin: 0;
+    padding: 0;
     width: 270px;
   
 }
 
 .people {
 
+    margin-top: 30px;
+    margin-bottom: 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -261,6 +295,8 @@ h1, h2, h3 {
 
 .position {
     
+    margin-top: 10px;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
     color: var(--primary-text-color--);
@@ -270,6 +306,8 @@ h1, h2, h3 {
 
 .footer {
 
+    margin: 0;
+    padding: 0;
     background: var(--hero-bg-color--);
 }
 
@@ -279,6 +317,7 @@ h1, h2, h3 {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 9px;
   
 
    
@@ -289,6 +328,7 @@ h1, h2, h3 {
     line-height: 1.86;
     text-decoration: none;
     color: var(--primary-text-color--);
+    margin-bottom: 9px;
 
    
     
@@ -296,13 +336,15 @@ h1, h2, h3 {
 
 .contacts {
 
+
+    padding: 0;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
     list-style: none;
-    padding-left: 0;
+  
     
     
 }
@@ -320,6 +362,7 @@ h1, h2, h3 {
     color: #FFFFFF;
     text-decoration: none;
     margin-bottom: 9px;
+    margin-top: 20px;
 
  }
 
@@ -372,7 +415,7 @@ h1, h2, h3 {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     margin-bottom: 9px;
-   
+    margin-top: 0;
    
  }
 
@@ -391,13 +434,17 @@ h1, h2, h3 {
  }
 
  .container {
+   
     width: 1200px;
-    padding: 0 15px;
     margin: 0 auto;
+
 
  }
 
  .container-nav {
+
+    margin: 0;
+   padding: 0;
     display: flex;
     align-items: center;
    
@@ -406,6 +453,9 @@ h1, h2, h3 {
 
 
  .contacts-header {
+
+    margin: 0;
+    padding: 0;
      margin-left:auto;
      text-align: center;
      display: flex;
@@ -421,7 +471,10 @@ h1, h2, h3 {
  .work {
     display: flex;
     gap: 30px;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
+    margin: 0;
+
+  
 
  }
 
@@ -433,27 +486,36 @@ h1, h2, h3 {
  }
 
  .contacts-footer {
+    
     padding: 60px 0 60px 0;
  }
 
  .buttons {
+
+   
     display: flex;
     justify-content: center;
     gap: 8px;
+    padding: 0;
+    margin: 0;
     margin-bottom: 50px;
     list-style: none;
 
 
  }
 
+
  .projects-list {
+
+    margin: 0;
+    padding: 0;
+    padding-bottom: 94px;
     display: flex;
     flex-wrap: wrap; 
-    gap: 30px; 
-    padding-bottom: 94px;  
+    gap: 30px;   
     list-style: none;
-    padding: 0px;
-    margin-bottom: 94px;      
+    
+        
     
  }
 
@@ -465,15 +527,18 @@ border-top: none;
 padding-left: 24px;
 padding-right: 24px;
 padding-top: 20px;
-padding-right: 20px;
+padding-bottom: 20px;
    
 }
 
 .container-advantages {
-    padding: 94px 0 118px 0;
+    margin: 0;
+    padding: 0;
+    padding: 94px 0 94px 0;
 }
 
 .container-header {
+    
     text-align: center;
 }
 
@@ -483,16 +548,15 @@ img {
     max-width: 100%;
 }
 
-.link-current,
-.link,
-.logo,
-.link-mail-header,
-.link-phone-header
-{
-    padding: 32px 0;
-}
+
 
 
 .ourteam {
-    padding-top: 94px;
+    padding: 94px 0 94px 0;
+}
+
+.working {
+    margin: 0;
+    padding-bottom: 94px 0 94px 0;
+
 }
