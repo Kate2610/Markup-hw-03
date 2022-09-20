@@ -25,8 +25,25 @@
        
      
          <ul class="contacts-header">
-           <li class="item"> <a href="mailto:info@devstudio.com" class="link-mail-header">info@devstudio.com</a></li>
-           <li class="item"> <a href="tel:+380961111111" class="link-phone-header">+38 096 111 11 11</a></li>
+
+            <li class="item">
+                <a href="mailto:info@devstudio.com" class="link-mail-header"> 
+                    <svg class="header-konvert" width="16" height="12">
+                        <use href="../images/icons.svg#icon-konvert"></use>
+                    </svg>
+                    info@devstudio.com
+                </a>
+            </li>
+          
+           <li class="item">
+             <a href="tel:+380961111111" class="link-phone-header"> 
+                    <svg class="header-phone" width="16" height="18">
+                          <use href="../images/icons.svg#icon-phone"></use>
+                   </svg>
+                +38 096 111 11 11
+            </a>
+          </li>
+          
          </ul>  
         </div>
     </div>
@@ -34,8 +51,8 @@
     </header> 
      <main>
         
-        <section class="hero"> 
-            <div class="container container-header">
+        <section class="hero overlay"> 
+            <div class="container">
             <h1  class="hero-title">Ефективні рішення для вашого бізнесу</h1>
             <button type="button" class="button">Замовити послугу</button>
             </div>
@@ -45,18 +62,38 @@
              <h2 class="visually-hidden">Наші переваги</h2>
             <ul class="advantages">
                 <li>
+                    <div class="icons">
+                        <svg class="icon-sputnik" width="70" height="70">
+                            <use href="../images/icons.svg#icon-sputnik"></use>
+                        </svg>
+                    </div>
                     <h3 class="feature-list-title">УВАГА ДО ДЕТАЛЕЙ</h3>
                     <p class="text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                 </li>
                 <li>
+                    <div class="icons">
+                        <svg class="icon-chasy" width="70" height="70">
+                            <use href="../images/icons.svg#icon-sputnik"></use>
+                        </svg>
+                    </div>
                     <h3 class="feature-list-title">ПУНКТУАЛЬНІСТЬ</h3>
                     <p class="text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                 </li>
                 <li>
+                <div class="icons">
+                    <svg class="icon-komp" width="70" height="70">
+                        <use href="../images/icons.svg#icon-sputnik"></use>
+                    </svg>
+                </div>
                     <h3 class="feature-list-title">ПЛАНУВАННЯ</h3>
                     <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
                 </li>
                 <li>
+                <div class="icons">
+                    <svg class="icon-astronaut" width="70" height="70">
+                        <use href="../images/icons.svg#icon-sputnik"></use>
+                    </svg>
+                </div>
                     <h3 class="feature-list-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                     <p class="text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                 </li>
@@ -83,34 +120,220 @@
                    <img src="./images/igor.jpg" alt="ігор" width="270">
                    <h3 class="people">Ігор Дем'яненко</h3>
                    <p class="position"> Product Designer</p>
+
+                <ul class="list-contacts">
+                    <li class="button-inst">
+                        <a href="">
+                            <svg class="instagram" width="44" height="44">
+                                <use href="../images/icons.svg#icon-instagram-h"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="button-twit">
+                        <a href="">
+                            <svg class="twitter" width="44" height="44">
+                                <use href="../images/icons.svg#icon-twitter-h"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="button-fb">
+                        <a href="">
+                            <svg class="facebook" width="44" height="44">
+                                <use href="../images/icons.svg#icon-facebook-f"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="button-li">
+                        <a href="">
+                            <svg class="linkedin" width="44" height="44">
+                                <use href="../images/icons.svg#icon-in"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
                 </li>
             
-                <li class="man" >
+                <li class="man"> 
                    <img src="./images/olga.jpg" alt="ольга" width="270">
                    <h3 class="people">Ольга Рєпіна</h3>
                    <p class="position"> Frontend Developer</p> 
+                    <ul class="list-contacts">
+                        <li class="button-inst">
+                            <a href="">
+                                <svg class="instagram" width="44" height="44">
+                                    <use href="../images/icons.svg#icon-instagram-h"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="button-twit">
+                            <a href="">
+                                <svg class="twitter" width="44" height="44">
+                                    <use href="../images/icons.svg#icon-twitter-h"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="button-fb">
+                            <a href="">
+                                <svg class="facebook" width="44" height="44">
+                                    <use href="../images/icons.svg#icon-facebook-f"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="button-li">
+                            <a href="">
+                                <svg class="linkedin" width="44" height="44">
+                                    <use href="../images/icons.svg#icon-in"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                
                 </li>
             
                 <li class="man">
                    <img src="./images/mykola.jpg" alt="микола" width="270">
                    <h3 class="people"> Микола Тарасов</h3>
                    <p class="position"> Marketing</p>
+                    <ul class="list-contacts">
+                        <li class="button-inst">
+                            <a href="">
+                                <svg class="instagram" width="44" height="44">
+                                    <use href="../images/icons.svg#icon-instagram-h"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="button-twit">
+                            <a href="">
+                                <svg class="twitter" width="44" height="44">
+                                    <use href="../images/icons.svg#icon-twitter-h"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="button-fb">
+                            <a href="">
+                                <svg class="facebook" width="44" height="44">
+                                    <use href="../images/icons.svg#icon-facebook-f"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="button-li">
+                            <a href="">
+                                <svg class="linkedin" width="44" height="44">
+                                    <use href="../images/icons.svg#icon-in"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
          
                 <li class="man">
                    <img src="./images/mykhailo.jpg" alt="михайло" width="270">
                    <h3 class="people">Михайло Єрмаков</h3>
                    <p class="position"> UI Designer</p> 
+                    <ul class="list-contacts">
+                        <li class="button-inst">
+                            <a href="">
+                                <svg class="instagram" width="44" height="44">
+                                    <use href="../images/icons.svg#icon-instagram-h"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="button-twit">
+                            <a href="">
+                                <svg class="twitter" width="44" height="44">
+                                    <use href="../images/icons.svg#icon-twitter-h"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="button-fb">
+                            <a href="">
+                                <svg class="facebook" width="44" height="44">
+                                    <use href="../images/icons.svg#icon-facebook-f"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="button-li">
+                            <a href="">
+                                <svg class="linkedin" width="44" height="44">
+                                    <use href="../images/icons.svg#icon-in"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
             </div>
         </section>
+
+
+        <section class="clients container">
+            <h2 class="section-title"> Постійні клієнти</h2>
+            <div class="our-partners container">
+           
+            <ul class="companies">
+
+
+               <a class="partner-button" href=""> 
+                <li class="partner">
+                    <svg class="logoo" width="106" height="60">
+                        <use href="../images/icons.svg#logo"></use>
+                    </svg>
+                </li>
+              </a>
+
+               <a class="partner-button" href="">
+                 <li class="partner1">
+                 <svg class="logo1" width="106" height="60">
+               <use href="../images/icons.svg#icon-Logo-1"></use>
+               </svg>
+            </li>
+              </a>
+
+           
+           <a class="partner-button" href="">
+              <li class="partner2">
+                <svg class="logo2" width="106" height="60">
+                    <use href="../images/icons.svg#icon-Logo-2"></use>
+                </svg>
+            </li>
+          </a>
+
+          <a  class="partner-button" href="">
+            <li class="partner3">
+                <svg class="logo3" width="106" height="60">
+                    <use href="../images/icons.svg#icon-Logo-3"></use>
+                </svg>
+            </li>
+          </a>
+
+          <a class="partner-button" href="">
+            <li class="partner4">
+                <svg class="logo4" width="106" height="60">
+                    <use href="../images/icons.svg#icon-Logo-4"></use>
+                </svg>
+            </li>
+        </a>
+         
+        <a class="partner-button-last" href="">
+            <li class="partner5">
+                <svg class="logo5" width="106" height="60">
+                    <use href="../images/icons.svg#icon-Logo-5"></use>
+                </svg>
+            </li>  
+            </a>
+        </ul>
+      </div>
+   </section>
       </main>
        <footer class="footer">
         <div class="container">
+
+<div class="join-us">
+
+        <div>   
         <a href="/index.html" class="logo"><span class="Web">Web</span><span class="Studio">Studio</span></a>
     
-         <adress> 
+         <adress class="adr"> 
             <ul class="contacts">
               <li  class="adress">  <a href="https://goo.gl/maps/KUsAnu7vbG7dcw6g8" target="_blank" rel="noopener noreferrer" class="link-a"> м. Київ, пр-т Лесі Українки, 26</a> </li>
               <li class="mail">  <a href="mailto:info@devstudio.com" class="link-mail-footer">info@devstudio.com</a> </li>
@@ -118,7 +341,48 @@
             </ul>
          </adress>  
         </div>
-      </footer> 
-   
+
+        <div class="join">
+        <h2 class="section-title-join"> ПРИЄДНУЙТЕСЬ</h2>
+                <ul class="f-l-contacts">
+           
+                      <li class="button-i">
+                         <a href="">
+                            <svg class="instagram-f" width="106" height="60">
+                            <use href="../images/icons.svg#icon-instagram-f"></use>
+                            </svg>
+                          </a>
+                       </li>
+
+                     <li class="button-t">
+                           <a href="">
+                              <svg class="twitter-f" width="106" height="60">
+                                   <use href="../images/icons.svg#icon-twitter-f"></use>
+                                  </svg>
+                                </a>
+                            </li>
+
+                    <li class="button-f">
+                        <a href="">
+                            <svg class="twitter-f" width="106" height="60">
+                                <use href="../images/icons.svg#icon-facebook-f"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                    <li class="button-l">
+                        <a href="">
+                            <svg class="twitter-f" width="106" height="60">
+                                <use href="../images/icons.svg#icon-facebook-f"></use>
+                            </svg>
+                        </a>
+                    </li>
+        </ul>
+
+      </div>
+    </div>
+</div>
+
+    </footer> 
 </body>
 </html>
