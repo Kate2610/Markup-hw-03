@@ -186,18 +186,22 @@ h1, h2, h3 {
 
 
 .hero {
-    margin: 0;
+
+    max-width: 1600px;
+    margin: 0 auto;
     padding: 0;
     background: var(--hero-bg-color--);
   
     margin-top: 0px;
     padding: 200px 0;
     text-align: center;
+    background-color:linear-gradient(to right, var(--hero-bg-color--), var(--hero-bg-color--));
 
-    background-image: url('../images/fon.jpg'), linear-gradient(to right, var(--hero-bg-color--), var(--hero-bg-color--));
-    background-size: 1600px, cover;
+    background-image: url('../images/fon.jpg');
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 600px;
 
    
 }
@@ -224,6 +228,7 @@ h1, h2, h3 {
     
 }
 
+
 .advantages {
     margin: 0;
     padding: 0;
@@ -242,6 +247,8 @@ h1, h2, h3 {
     margin-top: 0;
    
 }
+
+
 
 .section-title-team {
     font-size: 36px;
@@ -316,7 +323,7 @@ h1, h2, h3 {
 
 .people {
 
-    margin-top: 30px;
+    padding-top: 30px;
     margin-bottom: 0;
     font-weight: 500;
     font-size: 16px;
@@ -357,13 +364,14 @@ h1, h2, h3 {
    
 }
 
+
+
 .projects-item:hover,
 .projects-item:focus {
- 
+
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
-
 .objects {
     font-size: 16px;
     line-height: 1.86;
@@ -425,7 +433,9 @@ h1, h2, h3 {
 
 
  .link-mail-header, .link-phone-header {
+    display: flex;
     margin: 0;
+    align-items: center;
     padding: 32px 0;
     color: var(--primary-text-color--);
     text-decoration: none;
@@ -576,6 +586,7 @@ h1, h2, h3 {
     padding: 0;
     margin: 0;
 
+
  }
 
 .border  {
@@ -641,9 +652,7 @@ img {
     padding: 0;
 }
 
-.item {
-    padding: 32px 0;
-}
+
 
 .adr {
     display: block;
@@ -658,13 +667,13 @@ img {
 .icons 
 {
 
-    display: inline-block;
-    text-align: center;
+    display: flex;
     justify-content: center;
-  
-    background: #F5F4FA;
+    align-items: center;
+    background: var(--team-bg-color--);
     margin-bottom: 30px;
-  
+    width: 270px;
+    height: 120px;
     border-radius: 4px;
 }
 
@@ -680,7 +689,7 @@ img {
 
 
 .icon-chasy {
-
+    
     margin: 25px 102.34px;
     background-image: url(../svg-made/chasy.svg);
     background-repeat: no-repeat;
@@ -710,30 +719,30 @@ img {
 
 padding: 0;
 padding-top: 94px;
+padding-bottom: 94px;
 
   
 }
 
 .companies {
+
      margin: 0;
      padding: 0;
-    display: inline-flex;
+    display: flex;
     list-style-type: none;
-    align-items: baseline;
-    
-    
+
   } 
 
-  .our-partners {
-
-        display: inline-block;
-  
-  }
-
+ 
 
 .partner {
 
-   
+
+    width: 170px;
+    height: 92px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     background-image: url(../svg-made/logo.svg);
     background-repeat: no-repeat;
     
@@ -783,10 +792,7 @@ padding-top: 94px;
 
    }
 
-.our-partners {
-    margin-left: 0;
-    padding: 0 0 94px 0;
-}     
+    
 
 .logo1 {
     display: flex;
@@ -813,6 +819,7 @@ padding-top: 94px;
 }
 
 .logo5 {
+    
     display: flex;
     text-align: center;
     justify-content: center;
@@ -820,6 +827,7 @@ padding-top: 94px;
 
 .logoo {
 
+   
     display: flex;
     text-align: center;
     justify-content: center;
@@ -829,12 +837,16 @@ padding-top: 94px;
 
 
 .partner-button {
-
-    
-    box-sizing: border-box;
+   justify-content: center;
+    width: 170px;
+    height: 92px;
     border: 1px solid #AFB1B8; 
     border-radius: 4px;
-    padding: 16px 32px;
+  
+    align-items: center;
+    text-align: center;
+
+
     margin-right: 30px;
     
 }
@@ -871,11 +883,14 @@ padding-top: 94px;
 
 .section-title-join {
 
+
+    margin: 0;
     margin-bottom: 20px;
     padding: 0;
     font-weight: 700;
     font-size: 14px;
     color: var(--primary-bg-color--);
+    text-transform: uppercase;
   
        
 }
@@ -893,14 +908,13 @@ padding-top: 94px;
     margin: 0;
     padding: 0;
     list-style: none;
-    align-items: baseline;
     display: flex;
     gap: 10px;
 }
 
 .button-i {
     
-   border-radius: 80%;
+   border-radius: 50%;
    width: 44px;
    height: 44px;
    display: inline-flex;
@@ -919,7 +933,7 @@ padding-top: 94px;
 
 .button-t {
 
-    border-radius: 80%;
+    border-radius: 50%;
     width: 44px;
     height: 44px;
     display: inline-flex;
@@ -937,7 +951,7 @@ padding-top: 94px;
 
 .button-f {
 
-    border-radius: 80%;
+    border-radius: 50%;
     width: 44px;
     height: 44px;
     display: inline-flex;
@@ -955,7 +969,7 @@ padding-top: 94px;
 
 .button-l {
 
-    border-radius: 80%;
+    border-radius: 50%;
     width: 44px;
     height: 44px;
     display: inline-flex;
@@ -973,7 +987,7 @@ padding-top: 94px;
 
 .button-inst {
 
-    border-radius: 80%;
+    border-radius: 50%;
     width: 44px;
     height: 44px;
     display: inline-flex;
@@ -992,7 +1006,7 @@ padding-top: 94px;
 
 .button-twit {
 
-    border-radius: 80%;
+    border-radius: 50%;
     width: 44px;
     height: 44px;
     display: inline-flex;
@@ -1011,7 +1025,7 @@ padding-top: 94px;
 
 .button-fb {
 
-    border-radius: 80%;
+    border-radius: 50%;
     width: 44px;
     height: 44px;
     display: inline-flex;
@@ -1030,7 +1044,7 @@ padding-top: 94px;
 
 .button-li {
 
-    border-radius: 80%;
+    border-radius: 50%;
     width: 44px;
     height: 44px;
     display: inline-flex;
@@ -1050,26 +1064,22 @@ padding-top: 94px;
 
 .list-contacts {
 
-    margin: 0;
+    list-style: none;
     margin-top: 16px;
-    margin-bottom: 30px;
     padding: 0;
-    display: inline-block;
-    align-items: center;
+    padding-bottom: 30px;
+    justify-content: center;
+    display: flex;
+    
     gap: 10px;
 }
 
-.header-konvert {
+ .header-konvert {
+    margin-right: 10px;
+    
 
-  
-        width: 16px;
-        height: 12px;
-        display: inline-flex;
-    
-        background-image: url(../svg-made/konvert.svg);
-        background-repeat: no-repeat;
-    
-}
+ }
+
 
 .header-konvert:hover,
 .header-konvert:focus {
