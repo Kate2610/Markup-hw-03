@@ -188,20 +188,18 @@ h1, h2, h3 {
 .hero {
 
     max-width: 1600px;
+    min-height: 600px;
     margin: 0 auto;
-    padding: 0;
-    background: var(--hero-bg-color--);
-  
-    margin-top: 0px;
     padding: 200px 0;
     text-align: center;
-    background-color:linear-gradient(to right, var(--hero-bg-color--), var(--hero-bg-color--));
+    background: var(--hero-bg-color--);
+    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/fon.jpg');
 
-    background-image: url('../images/fon.jpg');
+   
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 600px;
+   
 
    
 }
@@ -277,9 +275,6 @@ h1, h2, h3 {
     padding-bottom: 94px;
     margin: 0;
     padding: 0;
-
-   
-
 
 }
 
@@ -434,10 +429,12 @@ h1, h2, h3 {
 
  .link-mail-header, .link-phone-header {
     display: flex;
-    margin: 0;
     align-items: center;
+
+    margin: 0;
     padding: 32px 0;
     color: var(--primary-text-color--);
+    fill: var(--primary-text-color--);
     text-decoration: none;
     
  }
@@ -445,11 +442,14 @@ h1, h2, h3 {
  .link-mail-header:hover,
  .link-mail-header:focus {
     color: var(--accent-color--);
+    fill: var(--accent-color--);
+    
  }
 
  .link-phone-header:hover,
- .link-mail-header:focus {
+ .link-phone-header:focus {
     color: var(--accent-color--);
+    fill: var(--accent-color--);
 
  }
 
@@ -678,46 +678,11 @@ img {
 }
 
 
-.icon-sputnik {
-
-  margin: 25px 102.34px;
-  background-image: url(../svg-made/sputnik.svg);
-  background-repeat: no-repeat;  
- 
-
-}
-
-
-.icon-chasy {
-    
-    margin: 25px 102.34px;
-    background-image: url(../svg-made/chasy.svg);
-    background-repeat: no-repeat;
-   
-}
-
-.icon-komp {
-
-    margin: 25px 102.34px;
-    background-image: url(../svg-made/komp.svg);
-    background-repeat: no-repeat;
-     border-radius: 4px;
-
-}
-
-.icon-astronaut {
-
-    margin: 25px 102.34px;
-    background-image: url(../svg-made/astronaut.svg);
-    background-repeat: no-repeat;
-     border-radius: 4px;
-
-}
 
 
 .clients {
 
-padding: 0;
+
 padding-top: 94px;
 padding-bottom: 94px;
 
@@ -726,10 +691,14 @@ padding-bottom: 94px;
 
 .companies {
 
-     margin: 0;
-     padding: 0;
+    margin: 0;
+    padding: 0;
     display: flex;
     list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 30px;
 
   } 
 
@@ -743,8 +712,7 @@ padding-bottom: 94px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-image: url(../svg-made/logo.svg);
-    background-repeat: no-repeat;
+  
     
     }
 
@@ -752,7 +720,7 @@ padding-bottom: 94px;
 
 .partner1 {
 
-        background-image: url(../svg-made/logo1.svg);
+       
         background-repeat: no-repeat;
         border-radius: 4px;
    
@@ -760,7 +728,7 @@ padding-bottom: 94px;
 
 .partner2 {
     
-              background-image: url(../svg-made/logo2.svg);
+           
               background-repeat: no-repeat;
               border-radius: 4px;
     
@@ -768,7 +736,7 @@ padding-bottom: 94px;
 
 .partner3 {
    
-           background-image: url(../svg-made/logo3.svg);
+         
            background-repeat: no-repeat;
           border-radius: 4px;
             
@@ -777,7 +745,7 @@ padding-bottom: 94px;
    
 .partner4 {
 
-         background-image: url(../svg-made/logo4.svg);
+    
         background-repeat: no-repeat;
         border-radius: 4px;
 
@@ -786,83 +754,49 @@ padding-bottom: 94px;
 
 .partner5 {
 
-       background-image: url(../svg-made/logo5.svg);
        background-repeat: no-repeat;
        border-radius: 4px;
 
    }
 
-    
 
-.logo1 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-.logo2 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-.logo3 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-.logo4 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-.logo5 {
-    
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-.logoo {
-
-   
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-
-
-
-.partner-button {
-   justify-content: center;
+ .knopka {
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8; 
+    border: 1px solid #AFB1B8;
     border-radius: 4px;
-  
-    align-items: center;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+ }
 
+.knopka:hover,
+.knopka:focus {
 
-    margin-right: 30px;
-    
+   
+border-color: var(--accent-color--);
+
+}
+.logoo {
+margin-top: 18px;
+
+}
+
+.partner-button {
+    color: var(--primary-text-color--);
+        fill: var(--primary-text-color--);
 }
 
 .partner-button:hover,
 .partner-button:focus {
   
-    border-color: var(--accent-color--);
+ 
+    fill: var(--accent-color--);
    
 }
 
 .partner-button-last {
-    box-sizing: border-box;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    padding: 16px 32px;
+
     margin-right: 0;
 
 }
@@ -913,15 +847,15 @@ padding-bottom: 94px;
 }
 
 .button-i {
-    
+   
    border-radius: 50%;
    width: 44px;
    height: 44px;
-   display: inline-flex;
+   display: flex;
+   align-items: center;
+   justify-content: center;
    background: rgba(255, 255, 255, 0.1);
-   background-image: url(../svg-made/instagram-f.svg);
-   background-repeat: no-repeat;
-   background-position: center;
+
 
 }
 
@@ -929,18 +863,7 @@ padding-bottom: 94px;
 .button-i:hover,
 .button-i:focus{
     background-color: var(--accent-color--)
-}
 
-.button-t {
-
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    display: inline-flex;
-    background: rgba(255, 255, 255, 0.1);
-    background-image: url(../svg-made/twitter-f.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 
 }
 
@@ -974,10 +897,7 @@ padding-bottom: 94px;
     height: 44px;
     display: inline-flex;
     background: rgba(255, 255, 255, 0.1);
-    background-image: url(../svg-made/linkedin-f.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-
+ 
 }
 
 .button-l:hover,
@@ -987,78 +907,91 @@ padding-bottom: 94px;
 
 .button-inst {
 
-    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
     width: 44px;
-    height: 44px;
-    display: inline-flex;
-   
-    background-image: url(../svg-made/instagram-h.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 44px; 
+    border-radius: 50%;
+    color: var(--primary-text-color--);
+    fill: var(--primary-text-color--);
+  
 
 }
+
+
 
 .button-inst:hover,
 .button-inst:focus {
     background-color: var(--accent-color--);
+    fill: var(--primary-bg-color--);
    
 }
 
 .button-twit {
 
-    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
     width: 44px;
     height: 44px;
-    display: inline-flex;
-
-    background-image: url(../svg-made/twitter-h.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+    border-radius: 50%;
+    color: var(--primary-text-color--);
+    fill: var(--primary-text-color--);
 
 }
 
 .button-twit:hover,
 .button-twit:focus {
     background-color: var(--accent-color--);
+    fill: var(--primary-bg-color--);
 
 }
 
 .button-fb {
 
-    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
     width: 44px;
     height: 44px;
-    display: inline-flex;
-
-    background-image: url(../svg-made/facebook-h.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+    border-radius: 50%;
+    color: var(--primary-text-color--);
+    fill: var(--primary-text-color--);
 
 }
+
 
 .button-fb:hover,
 .button-fb:focus {
     background-color: var(--accent-color--);
+    fill: var(--primary-bg-color--);
+    
 
 }
 
 .button-li {
 
-    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
     width: 44px;
     height: 44px;
-    display: inline-flex;
-
-    background-image: url(../svg-made/in.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-
+    border-radius: 50%;
+    color: var(--primary-text-color--);
+    fill: var(--primary-text-color--);
 
 }
+
 
 .button-li:hover,
 .button-li:focus {
     background-color: var(--accent-color--);
+    fill: var(--primary-bg-color--);
 
 }
 
@@ -1068,43 +1001,17 @@ padding-bottom: 94px;
     margin-top: 16px;
     padding: 0;
     padding-bottom: 30px;
+    text-align: center;
     justify-content: center;
     display: flex;
-    
     gap: 10px;
+    color: var(--primary-text-color--);
+    fill: var(--primary-text-color--);
 }
 
- .header-konvert {
+ .header-konvert, .header-phone {
     margin-right: 10px;
     
-
  }
 
-
-.header-konvert:hover,
-.header-konvert:focus {
- 
-    background-color: var(--accent-color--);
-
-}
-
-.header-phone {
-
-
-    width: 16px;
-    height: 18px;
-    display: inline-flex;
-    align-items: center;
-
-    background-image: url(../svg-made/phone.svg);
-    background-repeat: no-repeat;
-
-}
-
-.header-phone:hover,
-.header-phone:focus {
-
-    background-color: var(--accent-color--);
-
-}
 
