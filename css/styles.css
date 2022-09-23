@@ -102,6 +102,7 @@ h1, h2, h3 {
 
 }
 .button-nav { 
+    color: var(--title-text-color--);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -310,6 +311,15 @@ h1, h2, h3 {
      
 }
 
+
+.about {
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+
 .text {
     margin: 0;
     padding: 0;
@@ -319,8 +329,8 @@ h1, h2, h3 {
   
 .people {
     margin: 0;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    padding: 0;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -697,9 +707,7 @@ padding-bottom: 94px;
     padding: 0;
     display: flex;
     list-style-type: none;
-    align-items: center;
-    justify-content: center;
-    
+  
     gap: 30px;
 
   } 
@@ -762,15 +770,7 @@ padding-bottom: 94px;
    }
 
 
- .knopka {
-    width: 170px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
- }
+
 
 .knopka:hover,
 .knopka:focus {
@@ -779,16 +779,18 @@ padding-bottom: 94px;
 border-color: var(--accent-color--);
 
 }
-.logoo {
-margin-top: 18px;
 
-}
 
 .partner-button {
 
     
     color: var(--primary-text-color--);
     fill: var(--icon-color--);
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -877,43 +879,6 @@ fill: var(--accent-color--);
 
 }
 
-.button-t:hover,
-.button-t:focus {
-    background-color: var(--accent-color--)
-}
-
-.button-f {
-
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    display: inline-flex;
-    background: rgba(255, 255, 255, 0.1);
-    background-image: url(../svg-made/facebook-f.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
-
-.button-f:hover,
-.button-f:focus {
-    background-color: var(--accent-color--)
-}
-
-.button-l {
-
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    display: inline-flex;
-    background: rgba(255, 255, 255, 0.1);
- 
-}
-
-.button-l:hover,
-.button-l:focus {
-    background-color: var(--accent-color--)
-}
 
 .button-inst {
 
@@ -1010,7 +975,6 @@ fill: var(--accent-color--);
     list-style: none;
     margin-top: 16px;
     padding: 0;
-    padding-bottom: 30px;
     text-align: center;
     justify-content: center;
     display: flex;
