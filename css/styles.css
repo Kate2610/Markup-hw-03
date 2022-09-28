@@ -45,6 +45,7 @@ h1, h2, h3 {
 .link:hover,
 .link:focus {
     color: var(--accent-color--);
+    transition: opacity 2500ms linear, visibility 250ms linear;
 }
 
 
@@ -58,6 +59,7 @@ h1, h2, h3 {
     line-height: 1.14;
     letter-spacing: 0.02em;
     font-weight: 500;
+    
   
   
 }
@@ -111,6 +113,7 @@ h1, h2, h3 {
     border-radius: 4px;
     padding: 6px 22px;;
     border: none;
+   
 
     
  
@@ -151,15 +154,15 @@ h1, h2, h3 {
 
 
     display: block;
-    margin: 33px;
     margin-left: auto;
     position: absolute;
+    bottom: 0;
    
     content: "";
-    display: block;
     width: 100%;
     height: 4px;
     background-color: var(--accent-color--);
+ 
    
 }
 
@@ -507,7 +510,6 @@ h1, h2, h3 {
     align-items: center;
 
     margin: 0;
-    padding: 32px 0;
     color: var(--primary-text-color--);
     fill: var(--primary-text-color--);
     text-decoration: none;
@@ -626,16 +628,7 @@ h1, h2, h3 {
     position: absolute;
     display: flex;
     bottom: 0;
-    content: "Десктопні додатки";
-    color: var(--primary-bg-color--);
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.03em;
-   
+    content: "";
     width: 370px;
     height: 70px;
  
@@ -647,16 +640,7 @@ h1, h2, h3 {
         position: absolute;
         display: flex;
         bottom: 0;
-        content: "Мобільні додатки";
-        color: var(--primary-bg-color--);
-        align-items: center;
-        justify-content: center;
-        text-transform: uppercase;
-        font-weight: 700;
-        line-height: 16px;
-        text-align: center;
-        letter-spacing: 0.03em;
-        
+        content: ""; 
         width: 370px;
         height: 70px;
         
@@ -673,16 +657,7 @@ h1, h2, h3 {
         position: absolute;
         display: flex;
         bottom: 0;
-        content: "Дизайнерські рішення";
-        color: var(--primary-bg-color--);
-       
-        align-items: center;
-        justify-content: center;
-        text-transform: uppercase;
-        font-weight: 700;
-        line-height: 16px;
-        text-align: center;
-        letter-spacing: 0.03em;
+        content: "";
         
         width: 370px;
         height: 70px;
@@ -692,7 +667,23 @@ h1, h2, h3 {
 
 }
 
+.work-text {
+    margin:0;
+    padding: 0;
+    margin-left: 107px;
+    position: absolute;
+    bottom: 27px;
+    color: var(--primary-bg-color--);
+    text-align: center;
 
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+}
 
 
  .image {
@@ -1132,13 +1123,15 @@ fill: var(--accent-color--);
  }
 
 .backdrop {
-
+    
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms linear, visibility 250ms linear;
+    
 }
 
 .backdrop.is-hidden {
@@ -1148,8 +1141,10 @@ fill: var(--accent-color--);
 }
 
 
+
 .modal {
-    
+
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1163,15 +1158,16 @@ fill: var(--accent-color--);
 }
 
 .close {
-    
+        
         display: flex;
         margin-left: auto;
         margin-top: 8px;
         margin-right: 8px;
-        padding: 6px;
+        height: 30px;
+        width: 30px;
         justify-content: center;
         align-items: center;
-        
+        cursor: pointer;
         background: #FFFFFF;
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 50% ;
