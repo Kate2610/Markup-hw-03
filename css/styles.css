@@ -1172,9 +1172,9 @@ fill: var(--accent-color--);
 .close {
         
         display: flex;
-        margin-left: auto;
-        margin-top: 8px;
-        margin-right: 8px;
+        position: absolute;
+        top: 8px;
+        right: 8px;
         height: 30px;
         width: 30px;
         justify-content: center;
@@ -1220,12 +1220,15 @@ textarea {
 
 .form {
 
+display: block;
+padding-left: 41px;
+padding-right: 39px;
+padding-top: 40px;
+padding-bottom: 40px;
+
 
    
-    padding-left: 41px;
-    padding-right: 39px;
-   
-    padding-bottom: 28px;
+  
     
  
     
@@ -1244,10 +1247,13 @@ textarea {
   
 }
 
+
 .cc {
 
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+    align-items: center;
     
    
 }
@@ -1257,8 +1263,8 @@ textarea {
 }
  
 .form-lable {
-    font-weight: 400;
-    padding-bottom: 4px;
+   
+    margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
@@ -1267,11 +1273,11 @@ textarea {
 
 .form-lable-agree {
 
-    font-weight: 400;
+   
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    
+    margin-left: 8px;
     color: var(--primary-text-color--);
 }
 
@@ -1289,7 +1295,10 @@ textarea {
 }
 
 .form-field input {
-
+   
+    outline: none;
+  
+    align-items: center;
     padding-left: 33px;
     padding-top: 14px;
     padding-bottom: 14px;
@@ -1313,7 +1322,13 @@ textarea {
 }
 
 
+.form-input:checked {
+    border-color: var(--accent-color--);
+}
+
 .form-field textarea {
+
+   outline: none;
   
    border: 1px solid rgba(33, 33, 33, 0.2);
    border-radius: 4px;
@@ -1382,9 +1397,8 @@ position: relative;
 .icon-modal {
 
     position: absolute;
-    bottom: 0;
-    margin-left: 9px;
-    margin-bottom: 9px;
+    left: 9px;
+    bottom: 9px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1438,12 +1452,23 @@ position: relative;
     line-height: 1.87;
     cursor: pointer;
     border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
+.button-footer:hover,
+.button-footer:focus {
+    
+    background-color: var(--btn-hover--);
+}
+
+
+
+
+
 .svg-button-footer {
     
-    margin-right: 10px;
+    margin-left: 10px;
     
 }
 
@@ -1467,14 +1492,15 @@ position: relative;
     transition: fill 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox:checked + .svg-button-footer>.check {
+.form-input:checked + .svg-button-footer>.check {
 
     opacity: 1;
     fill: var(--accent-color--);
 }
 
-.checkbox:checked + .svg-button-footer>.check-border {
+.form-input:checked + .svg-button-footer>.check-border {
 
     opacity: 0;
    
 }
+
