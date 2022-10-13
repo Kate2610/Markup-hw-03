@@ -25,7 +25,7 @@ body {
 
 
 
-.logo {
+.container-nav__logo {
     
     color:var(--title-text-color--);
     font-family: Raleway, sans-serif;
@@ -66,15 +66,15 @@ h1, h2, h3 {
 
 /*buttons*/
 
-.button:hover,
-.button:focus { 
+.hero__button:hover,
+.hero__button:focus { 
     background-color: var(--btn-hover--);
     color: var(--primary-bg-color--);
 
 }
 
 
-.button {
+.hero__button {
     color: var(--primary-bg-color--);
     background-color: var(--accent-color--);
     font-family: inherit;
@@ -93,8 +93,6 @@ h1, h2, h3 {
  }
 
 
-
- 
 
  .button-nav:hover,
  .button-nav:focus {
@@ -137,7 +135,7 @@ h1, h2, h3 {
     margin: 0;
     border-bottom: 1px solid var(--border-color--);
 }
-.Web {
+.container-nav__Web {
     color: var(--accent-color--);
     font-weight: 700;
     font-size: 26px;
@@ -168,31 +166,31 @@ h1, h2, h3 {
    
 }
 
-.site-nav > .item {
+.site-nav__item {
     position: relative;
-    margin: 0;
+    margin-right: 50px;
     padding: 0;
     color: #212121;
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
- 
   
 }
 .site-nav {
     display: flex;
+    list-style: none;
     margin: 0;
     margin-left: 93px;
     padding: 0;
 
 }
 
-.site-nav .item:last-child {
+.site-nav__item:last-child {
 
     margin-right: 0px;
 }
 
-.contacts-header .item:last-child {
+.contacts-header__item:last-child {
 
     margin-right: 0px;
    
@@ -238,7 +236,7 @@ h1, h2, h3 {
 
 
 
-.hero-title {
+.hero__title {
     
     font-weight: 900;
     font-size: 44px;
@@ -277,16 +275,13 @@ h1, h2, h3 {
 
 
 
-.section-title-team {
+.team__section-title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     margin-top: 0;
     margin-bottom: 50px;
     padding: 0;
-
-  
-
 
  
 }
@@ -299,7 +294,7 @@ h1, h2, h3 {
   
 }
 
-.colleagues {
+.team__colleagues {
     display: flex;
     padding-bottom: 94px;
     margin: 0;
@@ -632,7 +627,7 @@ h1, h2, h3 {
 
  }
 
- .contacts-header .item
+ .contacts-header__item
  { 
     margin: 0;
     margin-right: 50px;
@@ -651,7 +646,7 @@ h1, h2, h3 {
  }
   
 
-.image {
+.work__image {
 
     position: relative;
     margin: 0;
@@ -689,7 +684,7 @@ h1, h2, h3 {
     margin-right: auto;
  }
 
- .buttons {
+ .portfolio__buttons {
 
    
     display: flex;
@@ -795,7 +790,7 @@ img {
 
 
 
-.adr {
+.footer__adr {
     display: block;
     margin-top: 20px;
 }
@@ -805,7 +800,7 @@ img {
 }
 
 
-.icons 
+.advantages__icons
 {
 
     display: flex;
@@ -830,7 +825,7 @@ padding-bottom: 94px;
   
 }
 
-.companies {
+.clients__companies {
 
     margin: 0;
     padding: 0;
@@ -952,7 +947,7 @@ fill: var(--accent-color--);
 }
 
 
-.join {
+.footer__join {
    margin: 0;
    margin-left: 70px;
    padding: 0;
@@ -975,7 +970,7 @@ fill: var(--accent-color--);
        
 }
 
-.join-us {
+.footer__join-us {
     margin: 0;
     padding: 0;
     display: flex;
@@ -1134,7 +1129,7 @@ fill: var(--accent-color--);
     
  }
 
-.backdrop {
+.hero__backdrop {
     
     position: fixed;
     top: 0;
@@ -1146,7 +1141,7 @@ fill: var(--accent-color--);
     
 }
 
-.backdrop.is-hidden {
+.hero__backdrop.is-hidden {
 
     opacity: 0;
     pointer-events: none;
@@ -1218,20 +1213,13 @@ textarea {
 }
 
 
-.form {
+.hero__form {
 
 display: block;
 padding-left: 41px;
 padding-right: 39px;
 padding-top: 40px;
 padding-bottom: 40px;
-
-
-   
-  
-    
- 
-    
 
 }
 
@@ -1283,6 +1271,9 @@ padding-bottom: 40px;
     color: var(--primary-text-color--);
 }
 
+.svg-button {
+    margin-right: 9px;
+}
 
 .terms {
     font-weight: 400;
@@ -1405,7 +1396,7 @@ position: relative;
     fill: var(--accent-color--);
 }
 
-.join-form {
+.footer__join-form {
 
     margin-left: auto;
 }
@@ -1463,12 +1454,6 @@ position: relative;
 
 
 
-
-.svg-button-footer {
-    
-    margin-right: 8.38px;
-    
-}
 
 .text-button {
  
