@@ -450,6 +450,13 @@ h1, h2, h3 {
     
 }
 
+.project-hover:focus .project-text {
+    transform: translateY(0);
+    overflow: hidden;
+
+
+}
+
 
 
 
@@ -1347,10 +1354,6 @@ padding-bottom: 40px;
 }
 
 
-
-
-
-
 .forma-button {
 
 margin-left: auto;
@@ -1386,6 +1389,9 @@ position: relative;
 .icon-modal {
 
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     left: 9px;
     bottom: 9px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1395,6 +1401,12 @@ position: relative;
 
     fill: var(--accent-color--);
 }
+
+.form-input:focus+.icon-modal {
+    fill: var(--accent-color--);
+}
+
+
 
 .footer__join-form {
 
@@ -1476,13 +1488,13 @@ position: relative;
     transition: fill 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:checked + .svg-button-footer>.check {
+.form-input:checked + .svg-button>.check {
 
     opacity: 1;
     fill: var(--accent-color--);
 }
 
-.form-input:checked + .svg-button-footer>.check-border {
+.form-input:checked + .svg-button>.check-border {
 
     opacity: 0;
    
@@ -1490,4 +1502,5 @@ position: relative;
 
 .form-input:checked + .check {
     border-color: var(--accent-color--);
-}
+} 
+
