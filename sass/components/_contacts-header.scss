@@ -1,0 +1,81 @@
+.contacts-header {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+    margin-top: auto;
+    margin-bottom: 64px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+
+  &__icon {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    margin-right: 10px;
+
+    fill: currentColor;
+  }
+}
+
+.contacts-header__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-top: 32px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.contacts-header__link {
+  display: flex;
+  align-items: center;
+
+  color: $color-secondary-text;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  transition: color $duration $timing-function;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.14;
+
+    &:hover,
+    &:focus {
+      color: $color-accent;
+    }
+  }
+}
+
+.contacts-header__link[href^='tel'] {
+  @media screen and (max-width: 767px) {
+    color: $color-accent;
+
+    font-size: min(34px, 10vw);
+    white-space: nowrap;
+  }
+}
